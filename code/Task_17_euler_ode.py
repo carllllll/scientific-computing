@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 T_ambient = 25.0
 T_initial = 90.0
 k = 0.12
-h = 1.0          # step size in minutes
+h = 5.0          # step size in minutes
 end_time = 30.0
 
 def cooling_rate(T):

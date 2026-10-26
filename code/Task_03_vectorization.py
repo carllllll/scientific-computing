@@ -4,7 +4,7 @@ import timeit
 
 # Simulated network latency readings in milliseconds
 rng = np.random.default_rng(42)
-latency_ms = rng.uniform(5, 250, 1_000)
+latency_ms = rng.uniform(5, 250, 1_000_000)
 
 def loop_version():
     squared = []

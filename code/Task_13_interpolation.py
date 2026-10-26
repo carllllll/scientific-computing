@@ -4,7 +4,7 @@ from scipy.interpolate import interp1d, CubicSpline
 import matplotlib.pyplot as plt
 
 hours = np.array([8, 9, 10, 11, 12, 13, 14], dtype=float)
-temperature = np.array([18.0, 20.0, 22.5, 24.0, 25.0, 25.5, 25.0])
+temperature = np.array([18.0, 20.0, 22.5, 24.0, 40.0, 25.5, 25.0])
 
 linear = interp1d(hours, temperature, kind="linear")
 cubic = CubicSpline(hours, temperature)

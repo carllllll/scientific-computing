@@ -6,7 +6,7 @@ from scipy.optimize import minimize
 # Required total capacity: at least 1000
 def cost(z):
     x, y = z
-    return 12*x + 18*y
+    return 12*x + 30*y
 
 def capacity_constraint(z):
     x, y = z
@@ -30,7 +30,7 @@ for a in range(0, 20):
     for b in range(0, 20):
         capacity = 100*a + 170*b
         if capacity >= 1000:
-            total_cost = 12*a + 18*b
+            total_cost = 12*a + 30*b
             if best_integer is None or total_cost < best_integer[0]:
                 best_integer = (total_cost, a, b, capacity)
 print("Best nearby integer solution (cost, A, B, capacity):", best_integer)

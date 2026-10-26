@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 
 rng = np.random.default_rng(42)
 capacity = 1000.0
-mean_demand = 850.0
+mean_demand = 1000.0
 std_demand = 120.0
 N = 100_000
 

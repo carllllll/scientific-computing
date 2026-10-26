@@ -3,9 +3,9 @@ import numpy as np
 from scipy.linalg import lu_factor, lu_solve
 
 A = np.array([
-    [ 4.0, -1.0,  0.0],
-    [-1.0,  4.0, -1.0],
-    [ 0.0, -1.0,  3.0]
+    [ 6.0, -1.0,  0.0],
+    [-1.0,  6.0, -1.0],
+    [ 0.0, -1.0,  5.0]
 ])
 
 measurement_sets = [

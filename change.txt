@@ -1,0 +1,37 @@
+Task 2: Max 29.40 increases to 45.00 and mean 23.12 also rises to the value: 23.77. The maximum follows the spike exactly. The mean rises by only 0.65 (the 15.6 °C increase divided by 24), because one value is averaged with 23 others. A single outlier moves the mean modestly but dominates the max.
+
+Task 3: The original value was 1,000,000 which was changed to 1,000. This caused the loop time to fall from 0.2572 s to 0.0008 s since there is 1000 times less data than the original at 1,000,000 values the vectorized time is too small to measure properly so the ratio changes if it is reran.
+
+Task 4: Absolute error 0.00021 rises to 0.01421 and relative 0.015% increases to 1.005%. 1.4 is a rougher approximation of √2 (1.41421) than 1.414, so it’s further off. The relative error shows that 0.014 is about 1% of the true value.
+
+Task 5: We changed both the angle value (from 45 degrees to 90) and the scale (from 2, 1.5 to 3.0, 0.5). Determinant 3.0 becomes 1.5. The determinant is the area scale factor, and it equals the product of the stretches. The rotation angle doesn’t affect it, since rotating doesn’t change area. A 90° turn also sends the corner points to different positions than 45° did.
+
+Task 6: B was changed from [20, 72] to [40, 160]. The overall answer value changed from 3 and 4 servers to 5 and 10. Memory use went up by more than double and CPU value doubled. Since type B is the memory-heavy server it rose more since you need more of B.
+
+Task 7: The diagonal values of A were changed from 4, 4, 3 to 6, 6, 5 and the output changed from [5, 5, 5] to [2.93, 2.57, 2.51]. A larger diagonal holds each unkown down more, so the same measurements give smaller values.
+
+Task 8: The original values of b were changed to [0., 0., 0., 0., 100.]. We noted that the graph barely changes (150 and 75 iterations before, 148 and 76 after). The iterations depend on the matrix A, which remained unchanged. The boundary temperatures only change the answer. The printed temperatures show the real change: from falling (87 to 33) to rising (17 to 83), because the hot end is now on the right.
+
+Task 9: Eigenvalue 2.56 becomes 3.0 and scores (0.22, 0.28, 0.28, 0.22) turn to 0.25. The eigenvalue is higher because the network is more connected overall. Every node is now connected to every other, so none is more important than another.
+
+Task 10: Equilibrium 27.5 °C rises to about 33.7 °C. The equation balances temperature against a surrounding value (25 to 30) plus a decaying term (10 to 20). A warmer surrounding value and a larger extra term both push the balance point up.
+
+Task 11: The IRR value 11.54% becomes 53.44%.The yearly cash inflows were changed to 6000, 7000, 8000 and 5000 back on the same 10,000 investment, so the rate of return that breaks even is far higher.
+
+Task 12: Crossing at (±1.517, 1.303) to (±1.836, 2.372). The circle’s radius went from 2 to 3. The bigger circle reaches the parabola farther from the centre, so the crossing is higher up and further out.
+
+Task 13: We changed the 12:00 temperature value from 25.0 to 40.0. The smooth curve now has a spike at 12:00 and the cubic spline wiggles. It dips below the real data around 10:30 and again near 13:30 (to about 19 °C, lower than every neighbouring reading). The spline is forced to be smooth through all the points, so one sharp point makes it overshoot elsewhere. The linear version joins the dots and stays sensible. At 10:30 the linear estimate stays 23.25 while the cubic falls from 23.36 to 21.51.
+
+Task 14: A good fit (RMSE about 1.5 ms) became a poor one (about 55.7 ms), and the 400-user prediction went from 378 ms to 757 ms. An outlier at 350 users (600 ms) pulls the whole curve towards it. The fit also bends upwards at low load, which is unrealistic. Least squares squares the errors, so one large error carries a lot of weight. The value went from 305 to 600.
+
+Task 15: The value 38.0 at the last position was changed to 80.0. Speed at the end went from 8.0 to 50 m/s(meters per second), and the time t=5 estimated to be 7.65 changed to 28.65. The data now claims the vehicle moved 50 m in one second, which is 180 km/h. The t=5 value rises as well, because the central difference uses the neighbouring points on both sides. A single bad positional reading spoils the nearby speed estimates.
+
+Task 16: The powere reading 1.8(at 6 hours) was changed to 5.0. This affected the Trapezoid and Simpson’s rule which went from 15.7 and 15.8 (0.1 apart) to 22.1 and 24.3 (2.2 apart). The trapezoid rule joins points with straight lines, and Simpson’s rule fits curves through groups of points. On smooth data they agree, but on a sharp peak with few readings they disagree, so neither is trustworthy without more data.
+
+Task 17: The h value was changed from 1.0 to 5.0. The Euler line went from hugging the exact curve to sitting visibly below it, and the final error grew from about 0.4 °C to 1.5 °C. Euler uses the slope at the start of each step and assumes it stays that steep. The cooling flattens as it goes, so a bigger step overshoots the drop. A smaller step reduces this.
+
+Task 18: The resistance value was changed to 5000. Because of the increase in resistance voltage after 5 s (seconds) went from about 4.97 V to 3.16 V. The charging time constant is R × C, which went from 1 s to 5 s. After one time constant the capacitor reaches about 63% of the supply (3.16 V of 5 V), so with the larger resistance it has only had one time constant to charge.
+
+Task 19: The type B cost was changed to 30 in both the cost function and the integer loop. The best plan flipped from all Type B (cost 105.88; whole servers 108 with 6 B) to all Type A (cost 120, 10 units). B gave capacity at 18/170 = 0.106 per unit against A’s 12/100 = 0.12. After raising B’s cost to 30, B costs 0.176 per unit, so A is now cheaper.
+
+Task 20: Overload probability of about 10.6% rises to about 49.6%. Demand averages 1000 with the same spread, and capacity is also 1000, so demand exceeds capacity about half the time. Before, capacity was 1.25 which is standard deviations above the average demand, which is why overload was rare.

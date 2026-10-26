@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 
 # dV/dt = (Vs - V)/(R*C)
 Vs = 5.0       # supply voltage (V)
-R = 1000.0     # resistance (ohms)
+R = 5000.0     # resistance (ohms)
 C = 0.001      # capacitance (farads)
 V0 = 0.0       # initial capacitor voltage
 

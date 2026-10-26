@@ -5,14 +5,14 @@ import matplotlib.pyplot as plt
 
 # f(T) = 0 means heat gain equals heat loss.
 def heat_balance(T):
-    return T - 25 - 10*np.exp(-T/20)
+    return T - 30 - 20*np.exp(-T/20)
 
 # Bisection: bracket a sign change
 solution = root_scalar(heat_balance, bracket=[20, 40], method="bisect", xtol=1e-10)
 
-# Fixed-point form: T = 25 + 10*exp(-T/20)
+# Fixed-point form: T = 30 + 20*exp(-T/20)
 def g(T):
-    return 25 + 10*np.exp(-T/20)
+    return 30 + 20*np.exp(-T/20)
 
 T = 30.0
 history = [T]

@@ -2,7 +2,7 @@
 from scipy.optimize import root_scalar
 
 # Initial investment followed by annual cash inflows
-cash_flows = [-10000, 3000, 3500, 4000, 2500]
+cash_flows = [-10000, 6000, 7000, 8000, 5000]
 
 def npv(rate):
     return sum(cf / (1 + rate)**t for t, cf in enumerate(cash_flows))

@@ -3,7 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 time = np.array([0, 1, 2, 3, 4, 5, 6], dtype=float)
-position = np.array([0.0, 4.8, 10.2, 16.1, 22.7, 30.0, 38.0])
+position = np.array([0.0, 4.8, 10.2, 16.1, 22.7, 30.0, 80.0])
 speed = np.zeros_like(position)
 
 # Forward difference at the beginning

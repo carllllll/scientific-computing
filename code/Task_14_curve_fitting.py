@@ -4,7 +4,7 @@ from scipy.optimize import curve_fit
 import matplotlib.pyplot as plt
 
 users = np.array([50, 100, 150, 200, 250, 300, 350], dtype=float)
-response_ms = np.array([82, 95, 115, 145, 185, 238, 305], dtype=float)
+response_ms = np.array([82, 95, 115, 145, 185, 238, 600], dtype=float)
 
 def model(x, a, b, c):
     return a*x**2 + b*x + c

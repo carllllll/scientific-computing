@@ -10,7 +10,7 @@ print("Tolerance-based comparison:", np.isclose(calculated, expected))
 
 # Absolute and relative error
 true_value = np.sqrt(2)
-approx_value = 1.414
+approx_value = 1.4
 absolute_error = abs(true_value - approx_value)
 relative_error = absolute_error / abs(true_value)
 print(f"Absolute error: {absolute_error:.8f}")

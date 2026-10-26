@@ -3,10 +3,10 @@ import numpy as np
 
 # Adjacency matrix for a small undirected network. Node order: A, B, C, D
 A = np.array([
-    [0., 1., 1., 0.],
+    [0., 1., 1., 1.],
     [1., 0., 1., 1.],
     [1., 1., 0., 1.],
-    [0., 1., 1., 0.]
+    [1., 1., 1., 0.]
 ])
 
 eigenvalues, eigenvectors = np.linalg.eig(A)

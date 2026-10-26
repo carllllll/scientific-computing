@@ -9,14 +9,14 @@ points = np.array([
     [0.0, 1.0]
 ])
 
-angle = np.deg2rad(45)
+angle = np.deg2rad(90)
 rotation = np.array([
     [np.cos(angle), -np.sin(angle)],
     [np.sin(angle),  np.cos(angle)]
 ])
 scale = np.array([
-    [2.0, 0.0],
-    [0.0, 1.5]
+    [3.0, 0.0],
+    [0.0, 0.5]
 ])
 
 # Combined transformation

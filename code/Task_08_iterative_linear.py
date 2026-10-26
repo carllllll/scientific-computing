@@ -10,7 +10,7 @@ A = np.array([
     [ 0.,  0.,  0., -1.,  2.]
 ])
 # Boundary influence: left boundary = 100 C, right boundary = 20 C
-b = np.array([100., 0., 0., 0., 20.])
+b = np.array([0., 0., 0., 0., 100.])
 
 def jacobi(A, b, tol=1e-8, max_iter=500):
     D = np.diag(A)
